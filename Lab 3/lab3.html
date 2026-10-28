@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab 3</title>
+    <style>
+        .cl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+
+        }
+        .buttons{
+         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cl" style="background-color: yellow">
+
+        <h1>Cart</h1>
+        <h2 id="quantity"></h2>
+        <div class="buttons">
+        <button onclick="add2()">+2</button>
+        <button onclick="add3()">+3</button>
+        <button onclick="showQuantity()">Show Quantity</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="addToCart()">Add to cart</button>
+        </div>
+    </div>
+
+<script src="lab3.js"></script>
+</body>
+</html>
