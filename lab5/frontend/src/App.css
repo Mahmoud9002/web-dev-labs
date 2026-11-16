@@ -1,0 +1,144 @@
+/* Base Styles */
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+/* Form Styles */
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.add-form input {
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.add-form button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-form button:hover {
+  background-color: #357abd;
+}
+
+/* Movie Card Styles */
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 6px solid #f5c518; /* IMDb Yellow */
+}
+
+.movie-card h2 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.review {
+  color: #666;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.stars-display {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  min-height: 30px; /* Prevents layout shift when stars change */
+}
+
+/* Controls / Buttons */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.controls span {
+  font-weight: 600;
+  color: #555;
+  margin-right: 4px;
+}
+
+.controls button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.controls button:hover {
+  background: #e2e6ea;
+  transform: translateY(-1px);
+}
+
+.remove-btn {
+  margin-left: auto; /* Pushes remove button to the right */
+  background-color: #fff0f0 !important;
+  color: #d32f2f !important;
+  border-color: #ffc9c9 !important;
+}
+
+.remove-btn:hover {
+  background-color: #ffc9c9 !important;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
